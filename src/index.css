@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 207 100% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 207 100% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 207 100% 16%;
+    --primary: 206 100% 26%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 207 60% 96%;
+    --secondary-foreground: 207 100% 16%;
+    --muted: 207 40% 95%;
+    --muted-foreground: 207 25% 42%;
+    --accent: 206 100% 26%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 207 35% 88%;
+    --input: 207 35% 88%;
+    --ring: 206 100% 26%;
+    --radius: 1rem;
+
+    /* Doctora Canela brand */
+    --brand: #004883;
+    --brand-deep: #00325c;
+    --brand-ink: #062a45;
+    --brand-mid: #2e7db8;
+    --brand-sky: #e8f2fa;
+    --brand-mist: #f5f9fc;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #ffffff;
+    color: var(--brand-ink);
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Zen Maru Gothic', 'Nunito', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: var(--brand);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 2px var(--brand);
+    color: transparent;
+  }
+  .text-outline-white {
+    -webkit-text-stroke: 2px rgba(255,255,255,.9);
+    color: transparent;
+  }
+  .text-outline-thin {
+    -webkit-text-stroke: 1.5px var(--brand);
+    color: transparent;
+  }
+}
+
+/* ---- manga / editorial helpers ---- */
+
+.mask-line {
+  display: block;
+  overflow: hidden;
+}
+.mask-line > span {
+  display: block;
+  transform: translateY(110%);
+}
+
+.hand-underline {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 Q 30 2 60 7 T 118 5' fill='none' stroke='%23004883' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.35em;
+  padding-bottom: 0.15em;
+}
+
+.halftone-bg {
+  background-image: radial-gradient(circle, rgba(0,72,131,0.14) 1.2px, transparent 1.3px);
+  background-size: 14px 14px;
+}
+
+.speed-lines {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0px,
+    transparent 22px,
+    rgba(0,72,131,0.10) 22px,
+    rgba(0,72,131,0.10) 24px
+  );
+}
+
+.paper-grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0.28 0 0 0 0 0.51 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* pill button with ink hover */
+.btn-ink {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition: color .45s cubic-bezier(.77,0,.175,1);
+}
+.btn-ink::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--brand);
+  transform: translateY(101%);
+  transition: transform .45s cubic-bezier(.77,0,.175,1);
+  border-radius: inherit;
+}
+.btn-ink:hover::before {
+  transform: translateY(0);
+}
+.btn-ink:hover {
+  color: #fff;
+}
+
+.btn-ink-light {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition: color .45s cubic-bezier(.77,0,.175,1);
+}
+.btn-ink-light::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #fff;
+  transform: translateY(101%);
+  transition: transform .45s cubic-bezier(.77,0,.175,1);
+  border-radius: inherit;
+}
+.btn-ink-light:hover::before { transform: translateY(0); }
+.btn-ink-light:hover { color: var(--brand); }
+
+/* double-layer nav hover */
+.nav-flip {
+  display: inline-block;
+  height: 1.25em;
+  overflow: hidden;
+}
+.nav-flip .nav-flip-inner {
+  display: flex;
+  flex-direction: column;
+  transition: transform .4s cubic-bezier(.77,0,.175,1);
+}
+.nav-flip:hover .nav-flip-inner {
+  transform: translateY(-1.25em);
+}
+
+/* floating decorations */
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-14px) rotate(3deg); }
+}
+.animate-floaty { animation: floaty 6s ease-in-out infinite; }
+.animate-floaty-slow { animation: floaty 9s ease-in-out infinite; }
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+.animate-breathe { animation: breathe 4.5s ease-in-out infinite; }
+
+/* ken burns for hero layers */
+@keyframes kenburns {
+  0% { transform: scale(1.02) translate(0,0); }
+  100% { transform: scale(1.14) translate(-1.5%, -2%); }
+}
+
+/* marquee strip */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+/* cart drawer transitions handled by framer-motion */
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
