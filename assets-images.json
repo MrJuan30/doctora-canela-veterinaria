@@ -1,0 +1,64 @@
+{
+  "images": [
+    {
+      "file": "hero-1.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F4bab779a332accc8755f79d68f37e430b9b7c78ab9d11d641d957dc96201322a?filename=hero-1.jpg&sig=SgdPRxII0Wvq-h1zGiVwxNyFNQ4JQES-yFlaaTahor0=&t=o"
+    },
+    {
+      "file": "hero-2.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F8dd0c549b3bdf0d86ccbdfef969ec71358d51859ca3b1dbaa3de8d6c08af223d?filename=hero-2.jpg&sig=RZ5ZLVJ7BQ9fQ3j38U81Q1zNJER1kVcCFOit1C94wyo=&t=o"
+    },
+    {
+      "file": "hero-3.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F383ca76c7fcbb4d2162e7dd2ff3f71252e6463fc728b565caf51e607cf512a93?filename=hero-3.jpg&sig=uID4JLHv0KtOvYgTiu8zscrMOgH56KrcPb1d6064gVo=&t=o"
+    },
+    {
+      "file": "logo.png",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2Fa1461b923396f029940353440c09a7086e06b54d907c4017bbb68a72f0395a7d?filename=logo.png&sig=WRsJqxIdl-jScNzmAUzDD-qtMq3r9SpjUIGfUsDQM2s=&t=o"
+    },
+    {
+      "file": "producto-arenero.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F6e8f9adbb639beb9a0c6278255c9e284cca18cdc3f090afcd8fbb87a3fd41926?filename=producto-arenero.jpg&sig=_29pGSOQk78LeXuhMWZcPmAm2hj3qpT39OZw2btmSpM=&t=o"
+    },
+    {
+      "file": "producto-cama-gato.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2Ff4dfb92b97f80ab16f9d014e0696252e5cd0f94c33928d55f9fa02cc81c40380?filename=producto-cama-gato.jpg&sig=o4dKiTvxjdxpx2vzSUJm3vRxoO8byp2EoliClp2Vo-Y=&t=o"
+    },
+    {
+      "file": "producto-cama-perro.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2Ff1e732815a08192f48901012d2c3604e3840fa375f94c81b646e3c14bd740901?filename=producto-cama-perro.jpg&sig=2JX40QlSKmWCPWRbj3VbHtGTIL7os1nteylcAcxZ0Ys=&t=o"
+    },
+    {
+      "file": "producto-collar.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2Fa16658b2d598552e00ad44a6a9bd6ceda133d8dd3c3760057de4da8cea9c5bc3?filename=producto-collar.jpg&sig=_t3UN2tlxCXSqM6sJ1HWFGjWb6s6gFGGJFLvo-aA0KI=&t=o"
+    },
+    {
+      "file": "producto-comedero.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2Fc387b8b27cc71cc85a3014513b14847a6c8e600e2511058bcb46fffc57fa2e26?filename=producto-comedero.jpg&sig=C5IfKvtNQBaB39ecevc0SEde9nwdXh-L2QZp3yTBPGg=&t=o"
+    },
+    {
+      "file": "producto-fuente-agua.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F06845df0a0b633ee8bb9eebd780d6b656f3d3b2bcf956c086cf6b329ab95ce31?filename=producto-fuente-agua.jpg&sig=y75q9b6PaOZfNiaSZUS8SQy6DeuoAlH_43m3zSWAEo8=&t=o"
+    },
+    {
+      "file": "producto-juguetes.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F00b13774ff97d85292502decc4c4ba3685edeb7ed5bb1d8ab1bb4a6c41acc516?filename=producto-juguetes.jpg&sig=YdUPhVPXnnpRdxNKs0mKsSHcJ5xpcrO1OHqrITnvVsM=&t=o"
+    },
+    {
+      "file": "producto-transportadora.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F0e789ad2b9871dab75aa073766aa65713e303b348d0730ede5e8ad611fc25d24?filename=producto-transportadora.jpg&sig=WvlivPH0zfFBOw8xi3p9jBuDerpAsz_CWyUk3DBbnNI=&t=o"
+    },
+    {
+      "file": "servicio-cirugias.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F1224060757b99be04c5535b544d65e5bdc1e659203596a637059575fa84a5a7e?filename=servicio-cirugias.jpg&sig=mzh4QVlUhJr4leEN_F25PGXneFsMZJaooGQFFchPS1Y=&t=o"
+    },
+    {
+      "file": "servicio-spa.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2F165d9b9fbe4661944daf9c26b3c21ecb92e134031f88ca8eb0e58fbf7d50a2dc?filename=servicio-spa.jpg&sig=ztK6GNCATeiJW9-pCg4diNzr7dmmCfEbPcb4qDLGmTw=&t=o"
+    },
+    {
+      "file": "servicio-urgencias.jpg",
+      "url": "https://www.kimi.com/apiv2-files/sign-obj/kimi-fs%2Ffiles%2Fblob%2Faca7302f4beec6e83634c464ecddefe209e97ea3048fb33953a1ba3c8ccf28c8?filename=servicio-urgencias.jpg&sig=WrTsu1FDa1YKz4XjOlyF2Rg93_oL7jeqyCO9kALHcv4=&t=o"
+    }
+  ]
+}
